@@ -1,0 +1,173 @@
+[
+  {
+    "timestamp": "2026-07-29T12:06:13.441734",
+    "mse_score": 21.438581466674805,
+    "threshold": 12.073346138000488,
+    "threat_type": "Сканирование портов",
+    "confidence": 0.841419193702414,
+    "description": "Количество уникальных портов назначения значительно выше обычного: 54 (P95: 7). Это может указывать на сканирование сети, работу ботнета или активность вредоносного ПО.\n\n⚠️ Дополнительно обнаружены аномалии: Аномальная нагрузка на CPU, Множество сетевых соединений.",
+    "mitre_attack": "T1046 - Network Service Scanning",
+    "recommendations": [
+      "Проверить процессы с сетевыми соединениями",
+      "Проанализировать firewall логи",
+      "Заблокировать подозрительные IP"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 1281.668867579747,
+      "bytes_recv_avg": 1172.255850371586,
+      "cpu_avg": 74.28666666666666,
+      "cpu_max": 78.22,
+      "ram_avg": 84.49216666666666,
+      "failed_logins": 0.0,
+      "unique_dst_ips_count": 12.7,
+      "unique_dst_ports_count": 54.0,
+      "disk_write_bytes_total": 2083635.2,
+      "disk_read_bytes_total": 5468467.2,
+      "process_creations": 0.0,
+      "active_connections_max": 142.0
+    }
+  },
+  {
+    "timestamp": "2026-07-29T12:37:25.026510",
+    "mse_score": 179.30674743652344,
+    "threshold": 12.073346138000488,
+    "threat_type": "Сканирование портов",
+    "confidence": 0.9500000000000001,
+    "description": "Количество уникальных портов назначения значительно выше обычного: 163 (P95: 7). Это может указывать на сканирование сети, работу ботнета или активность вредоносного ПО.",
+    "mitre_attack": "T1046 - Network Service Scanning",
+    "recommendations": [
+      "Проверить процессы с сетевыми соединениями",
+      "Проанализировать firewall логи",
+      "Заблокировать подозрительные IP"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 1229.6317860371344,
+      "bytes_recv_avg": 1134.9786887966413,
+      "cpu_avg": 34.5,
+      "cpu_max": 36.13,
+      "ram_avg": 87.262,
+      "failed_logins": 0.0,
+      "unique_dst_ips_count": 16.5,
+      "unique_dst_ports_count": 162.7,
+      "disk_write_bytes_total": 6546739.2,
+      "disk_read_bytes_total": 11760588.8,
+      "process_creations": 0.0,
+      "active_connections_max": 113.0
+    }
+  },
+  {
+    "timestamp": "2026-07-29T13:20:20.144841",
+    "mse_score": 244.51467895507812,
+    "threshold": 12.073346138000488,
+    "threat_type": "Сканирование портов",
+    "confidence": 0.9500000000000001,
+    "description": "Количество уникальных портов назначения значительно выше обычного: 195 (P95: 7). Это может указывать на сканирование сети, работу ботнета или активность вредоносного ПО.\n\n⚠️ Дополнительно обнаружены аномалии: Аномальная дисковая активность, Множество сетевых соединений.",
+    "mitre_attack": "T1046 - Network Service Scanning",
+    "recommendations": [
+      "Проверить процессы с сетевыми соединениями",
+      "Проанализировать firewall логи",
+      "Заблокировать подозрительные IP"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 4609.698756539092,
+      "bytes_recv_avg": 2117.955415582703,
+      "cpu_avg": 41.256,
+      "cpu_max": 46.58,
+      "ram_avg": 85.898,
+      "failed_logins": 0.0,
+      "unique_dst_ips_count": 10.7,
+      "unique_dst_ports_count": 195.0,
+      "disk_write_bytes_total": 50788352.0,
+      "disk_read_bytes_total": 30399283.2,
+      "process_creations": 0.0,
+      "active_connections_max": 225.5
+    }
+  },
+  {
+    "timestamp": "2026-07-29T14:04:10.780608",
+    "mse_score": 247.01385498046875,
+    "threshold": 12.073346138000488,
+    "threat_type": "Аномальная дисковая активность",
+    "confidence": 0.9,
+    "description": "Дисковая активность значительно выше обычного уровня. запись: 593.2 MB (P95: 47.9 MB), чтение: 90.2 MB (P95: 36.5 MB). Это может указывать на шифрование файлов (ransomware), резервное копирование, индексацию или работу вредоносного ПО.\n\n⚠️ Дополнительно обнаружены аномалии: Сканирование портов.",
+    "mitre_attack": "T1486 - Data Encrypted for Impact (возможно)",
+    "recommendations": [
+      "Проверить процессы с высоким disk I/O (Performance Monitor)",
+      "Обратить внимание на подозрительные расширения файлов",
+      "Проверить недавние установки программ",
+      "При массовом шифровании — НЕМЕДЛЕННО отключить ПК от сети"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 11739.49052060892,
+      "bytes_recv_avg": 8355.928817304435,
+      "cpu_avg": 49.803000000000004,
+      "cpu_max": 57.120000000000005,
+      "ram_avg": 88.14349999999999,
+      "failed_logins": 0.0,
+      "unique_dst_ips_count": 20.2,
+      "unique_dst_ports_count": 8.0,
+      "disk_write_bytes_total": 622035046.4,
+      "disk_read_bytes_total": 94529228.8,
+      "process_creations": 0.0,
+      "active_connections_max": 87.4
+    }
+  },
+  {
+    "timestamp": "2026-07-29T14:37:05.730831",
+    "mse_score": 55336.17578125,
+    "threshold": 12.073346138000488,
+    "threat_type": "Подозрительная аутентификация",
+    "confidence": 0.99,
+    "description": "Количество неудачных попыток входа значительно выше обычного: 882 (P95: 1). Это может указывать на brute-force атаку или подбор учётных данных.\n\n⚠️ Дополнительно обнаружены аномалии: Сканирование портов.",
+    "mitre_attack": "T1110 - Brute Force",
+    "recommendations": [
+      "Проверить журналы безопасности (Event ID 4625)",
+      "Заблокировать подозрительные IP-адреса",
+      "Включить политику блокировки учётных записей",
+      "Проверить, не скомпрометированы ли учётные записи"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 7042.606127873374,
+      "bytes_recv_avg": 3436.7580069420706,
+      "cpu_avg": 46.013999999999996,
+      "cpu_max": 52.86,
+      "ram_avg": 87.95,
+      "failed_logins": 881.7,
+      "unique_dst_ips_count": 14.4,
+      "unique_dst_ports_count": 8.0,
+      "disk_write_bytes_total": 8869478.4,
+      "disk_read_bytes_total": 19382425.6,
+      "process_creations": 0.0,
+      "active_connections_max": 79.5
+    }
+  },
+  {
+    "timestamp": "2026-07-29T16:11:39.152921",
+    "mse_score": 12.47391128540039,
+    "threshold": 12.073346138000488,
+    "threat_type": "Аномальная нагрузка на CPU",
+    "confidence": 0.6200549483258297,
+    "description": "Загрузка процессора значительно выше обычного уровня. Средняя: 100.0% (P95: 53.9%), пиковая: 100.0%. Это может указывать на работу ресурсоёмкого приложения, майнера или вредоносного ПО.\n\n⚠️ Дополнительно обнаружены аномалии: Сканирование портов.",
+    "mitre_attack": "T1496 - Resource Hijacking (возможно)",
+    "recommendations": [
+      "Открыть Диспетчер задач и проверить топ-процессы по CPU",
+      "Искать подозрительные процессы (cpuminer, xmrig, неизвестные exe)",
+      "Проверить автозагрузку на наличие вредоносных сервисов",
+      "Если процесс легитимный — добавить в исключения UEBA"
+    ],
+    "top_features": {
+      "bytes_sent_avg": 13954.67801897052,
+      "bytes_recv_avg": 130888.9715283532,
+      "cpu_avg": 100.0,
+      "cpu_max": 100.0,
+      "ram_avg": 90.19500000000001,
+      "failed_logins": 0.0,
+      "unique_dst_ips_count": 19.4,
+      "unique_dst_ports_count": 10.0,
+      "disk_write_bytes_total": 24730675.2,
+      "disk_read_bytes_total": 25472921.6,
+      "process_creations": 0.0,
+      "active_connections_max": 94.2
+    }
+  }
+]
