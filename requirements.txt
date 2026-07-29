@@ -1,0 +1,11 @@
+psutil
+pyyaml
+pandas
+pywin32
+torch
+matplotlib
+scikit-learn
+scipy
+streamlit
+plotly
+numpy
