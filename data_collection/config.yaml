@@ -1,0 +1,33 @@
+# config.yaml
+collection:
+  interval_seconds: 10            # Как часто опрашивать psutil
+  aggregation_window_seconds: 60  # Окно агрегации (1 минута)
+  buffer_flush_seconds: 60        # Как часто писать на диск
+
+storage:
+  output_dir: ".data_collection/data/aggregated"
+  max_file_size_mb: 100         # Ротация файлов
+  rotation_hours: 6             # Новый файл каждые 6 часов
+
+psutil:
+  enabled: true
+  collect_processes: true
+  collect_network: true
+  top_n_processes: 10
+
+eventlog:
+  enabled: true
+  channels:
+    - "Security"
+    - "System"
+    - "Application"
+  event_ids:
+    Security:
+      - 4624  # Успешный вход
+      - 4625  # Неудачный вход
+      - 4688  # Создание процесса
+      - 4689  # Завершение процесса
+    System:
+      - 7045  # Установка сервиса
+      - 6005  # Запуск Event Log
+    Application: []
